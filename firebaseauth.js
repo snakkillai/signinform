@@ -87,7 +87,7 @@
     console.log('About to navigate to homepage.html');
     console.log('Current location:', window.location.href);
     
-    window.location.href='homepage.html';
+    //window.location.href='homepage.html';
 })
     })
     .catch((error)=>{
