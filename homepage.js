@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
 import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import {getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 
-
+console.log("iam here in the homepagejs");
   // Your web app's Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyAUwuy3Ru-RNMZNDBCgPrg1lwPzl1kvKO0",
