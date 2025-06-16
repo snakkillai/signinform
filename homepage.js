@@ -1,6 +1,9 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
-import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
-import{getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"
+//import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+//import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+//import{getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+import{getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyAUwuy3Ru-RNMZNDBCgPrg1lwPzl1kvKO0",
