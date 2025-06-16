@@ -2,9 +2,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
 import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 import {getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
 
-const firebaseConfig = {
-    //YOUR COPIED FIREBASE PART SHOULD BE HERE
- //WATCH THIS VIDEO TO LEARN WHAT TO PUT HERE   https://youtu.be/_Xczf06n6x0
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAUwuy3Ru-RNMZNDBCgPrg1lwPzl1kvKO0",
+    authDomain: "loginpage-ca382.firebaseapp.com",
+    projectId: "loginpage-ca382",
+    storageBucket: "loginpage-ca382.firebasestorage.app",
+    messagingSenderId: "628799916478",
+    appId: "1:628799916478:web:b1c83c5342f65a27b511ef"
   };
  
   // Initialize Firebase
