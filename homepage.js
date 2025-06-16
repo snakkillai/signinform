@@ -1,10 +1,8 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
 import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
-import {getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+import{getFirestore, getDoc, doc} from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"
 
-console.log("iam here in the homepagejs");
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyAUwuy3Ru-RNMZNDBCgPrg1lwPzl1kvKO0",
     authDomain: "loginpage-ca382.firebaseapp.com",
     projectId: "loginpage-ca382",
@@ -12,7 +10,7 @@ console.log("iam here in the homepagejs");
     messagingSenderId: "628799916478",
     appId: "1:628799916478:web:b1c83c5342f65a27b511ef"
   };
- 
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
