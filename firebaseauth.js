@@ -75,20 +75,12 @@
     const password=document.getElementById('password').value;
     const auth=getAuth();
 
-    signInWithEmailAndPassword(auth, email,password)
+ signInWithEmailAndPassword(auth, email,password)
     .then((userCredential)=>{
+        showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        .then((userCredential)=>{
-    showMessage('login is successful', 'signInMessage');
-    const user=userCredential.user;
-    localStorage.setItem('loggedInUserId', user.uid);
-    
-    console.log('About to navigate to homepage.html');
-    //console.log('Current location:', window.location.href);
-    
-    //window.location.href='homepage.html';
-})
+        window.location.href='/homepage.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
