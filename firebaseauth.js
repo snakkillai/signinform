@@ -81,8 +81,7 @@
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
 
-        window.location.href="/homepage.html";
-        //window.open("./homepage.html", "_blank");
+        window.location.href='homepage.html';
     })
     .catch((error)=>{
         const errorCode=error.code;
