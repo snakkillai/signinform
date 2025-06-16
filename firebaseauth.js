@@ -79,10 +79,16 @@
     .then((userCredential)=>{
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-        showMessage('login is successful', 'signInMessage');
-        setTimeout(() => {
-            window.location.href='homepage.html';
-        }, 1500);
+        .then((userCredential)=>{
+    showMessage('login is successful', 'signInMessage');
+    const user=userCredential.user;
+    localStorage.setItem('loggedInUserId', user.uid);
+    
+    console.log('About to navigate to homepage.html');
+    console.log('Current location:', window.location.href);
+    
+    window.location.href='homepage.html';
+})
     })
     .catch((error)=>{
         const errorCode=error.code;
