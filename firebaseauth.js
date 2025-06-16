@@ -77,11 +77,12 @@
 
     signInWithEmailAndPassword(auth, email,password)
     .then((userCredential)=>{
-        showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
         localStorage.setItem('loggedInUserId', user.uid);
-
-        window.location.href='homepage.html';
+        showMessage('login is successful', 'signInMessage');
+        setTimeout(() => {
+            window.location.href='homepage.html';
+        }, 1500);
     })
     .catch((error)=>{
         const errorCode=error.code;
